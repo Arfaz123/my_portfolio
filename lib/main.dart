@@ -6,6 +6,7 @@ import 'package:flutter/material.dart';
 import 'package:flutter/services.dart';
 import 'package:get/get.dart';
 import 'package:personal_web/app_routes/app_routes.dart';
+import 'package:personal_web/screens/splash_screen/splash_screen.dart';
 import 'package:personal_web/utils/common/coustom_package_info.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 import 'utils/root_binding.dart';
@@ -63,7 +64,7 @@ class _MyPersonalPortfolioWebState extends State<MyPersonalPortfolioWeb> {
       //     : themeService.darkThemeData,
       // darkTheme: themeService.darkThemeData,
       // themeMode: themeService.themeMode,
-      // home: const SplashScreen(),
+      home: const SplashScreen(),
       initialRoute: '/splashScreen',
       getPages: appRoutes(),
     );

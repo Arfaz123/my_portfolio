@@ -14,7 +14,7 @@ Widget commonAppbar({required String title, Function? onBackButtonTap,bool versi
       size.widthSpace(9),
       Text(
         title,
-        style: AppTextStyle.appbarTitle,
+        style: AppTextStyle.medium,
         textAlign: TextAlign.left,
       ),
       versionshow==true?
@@ -22,7 +22,7 @@ Widget commonAppbar({required String title, Function? onBackButtonTap,bool versi
       versionshow==true?
       Text(
         "${AppPackageInfo().getVersion()} + ${AppPackageInfo().getBuildNumber()}",
-        style: AppTextStyle.appbarTitle,
+        style: AppTextStyle.medium,
         textAlign: TextAlign.left,
       ) : Container(),
 
